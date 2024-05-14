@@ -1,0 +1,9 @@
+﻿
+@model List<TaskManager.Model.Task>
+@{}
+
+@foreach (TaskManager.Model.Task task in Model)
+{
+	<p>@task.Title </p>
+	<p>@task.Description  isReady=@task.IsReady</p>
+}
