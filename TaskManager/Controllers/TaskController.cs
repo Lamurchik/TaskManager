@@ -60,7 +60,6 @@ namespace TaskManager.Controllers
 		{
 			_tasks.Add(task);
 			return CreatedAtAction(nameof(GetTask), new { id = task.Id }, task);
-		}
-		
+		}	
 	}
 }
